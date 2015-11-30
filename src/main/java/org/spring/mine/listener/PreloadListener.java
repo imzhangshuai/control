@@ -15,7 +15,6 @@ public class PreloadListener extends HttpServlet {
 	}
 	
 	public void destroy(){
-		//清理 redis 连接池 缓存
 		RedisInitBean.returnResource();
 		RedisInitBean.destroy();
 	}
