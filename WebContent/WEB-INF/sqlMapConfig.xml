@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<settings>
+		<setting name="cacheEnabled" value="true"/>
+		<setting name="lazyLoadingEnabled" value="true"/>
+		<setting name="multipleResultSetsEnabled" value="true"/>
+		<setting name="useColumnLabel" value="true"/>
+		<setting name="useGeneratedKeys" value="true"/>
+		<setting name="autoMappingBehavior" value="PARTIAL"/>
+		<setting name="defaultExecutorType" value="SIMPLE"/>
+		<setting name="defaultStatementTimeout" value="25"/>
+		<setting name="safeRowBoundsEnabled" value="false"/>
+		<setting name="mapUnderscoreToCamelCase" value="false"/>
+		<setting name="localCacheScope" value="SESSION"/>
+		<setting name="jdbcTypeForNull" value="OTHER"/>	
+		<setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+	</settings>	
+
+	<typeAliases>
+		<typeAlias alias="User" type="com.team.mine.domain.UserAccount"/>
+	</typeAliases>
+	
+<!--
+	<mappers>
+		<mapper resource="com/team/mine/dao/UserMapper.xml" />
+		<mapper resource="com/team/mine/dao/UserInfoEntMapper.xml" />
+		<mapper resource="com/team/mine/dao/UserInfoPerMapper.xml" />
+		<mapper resource="com/team/mine/dao/UserFavorFolderMapper.xml" />
+		<mapper resource="com/team/mine/dao/UserFavorMapper.xml" />
+		<mapper resource="com/team/mine/dao/UserAccessLogInfoMapper.xml" />
+		<mapper resource="com/team/mine/dao/UserAccessLogMapper.xml" />
+		<mapper resource="com/team/mine/dao/LableMapper.xml" />
+		<mapper resource="com/team/mine/dao/ChannelMapper.xml" />
+		<mapper resource="com/team/mine/dao/AttributeMapper.xml" />
+		<mapper resource="com/team/mine/dao/PrdInfoMapper.xml" />
+		<mapper resource="com/team/mine/dao/PrdInfoItemMapper.xml" />
+		<mapper resource="com/team/mine/dao/UserAccessMapper.xml" />
+		<mapper resource="com/team/mine/dao/UserAccessLogInfoMapper.xml" />
+		<mapper resource="com/team/mine/dao/SysFileMapper.xml" />
+		<mapper resource="com/team/mine/dao/UserBuyMapper.xml" />
+		<mapper resource="com/team/mine/dao/UserSessionMapper.xml" />
+		<mapper resource="com/team/mine/dao/FileCountMapper.xml" />
+		<mapper resource="com/team/mine/dao/PaymentMapper.xml" />
+		<mapper resource="com/team/mine/dao/ItemMemberMapper.xml" />
+		<mapper resource="com/team/mine/dao/UserVipLevelMapper.xml" />
+		<mapper resource="com/team/mine/dao/ExportMapper.xml" />
+	</mappers>
+--> 	
+</configuration>
